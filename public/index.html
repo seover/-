@@ -1,17 +1,77 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>心悦头条</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title -->
+  <title>讯捷人事后台管理系统</title>
+
+  <meta name="author" content="Bootstrap 中文网">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="/assets/css/libs.bundle.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/assets/css/theme.bundle.css">
+
+  <style>
+    .bi {
+      display: inline-block;
+      vertical-align: -.125em;
+    }
+  </style>
+
+  <script src="https://hm.baidu.com/hm.js?668e545eeaf5292f68346197e68d738f"></script>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?668e545eeaf5292f68346197e68d738f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <style>
+    .iframe-preview {
+      top: 80px;
+      height: calc(100% - 80px);
+    }
+
+    .iframe-preview-mobile {
+      width: 375px !important;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .navbar {
+      height: 80px;
+      border-bottom: 6px solid var(--bs-primary) !important;
+    }
+  </style>
+  <script src="https://fastly.jsdelivr.net/npm/alpinejs@3.2.1/dist/cdn.min.js" defer=""></script>
+</head>
+
+<body x-data="{mobile: false}" data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
+
+  <main class="bg-dark position-relative vh-100">
+    <iframe x-bind:class="{'iframe-preview-mobile': mobile}" class="iframe-preview position-absolute w-100" width="100%"
+      src="https://majestic.bootmb.com/"></iframe>
+  </main>
+
+  <!-- JAVASCRIPT -->
+
+  <!-- Vendor JS -->
+  <script src="/assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="/assets/js/theme.bundle.js"></script>
+
+
+
+</body>
+
 </html>
